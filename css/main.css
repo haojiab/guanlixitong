@@ -1,0 +1,90 @@
+.bg{
+    background: url("../images/bg.png") no-repeat;
+    background-size: 100% ;
+}
+.bg-form{
+    width: 500px;
+    height: 500px;
+    background: rgba(255,255,255,0.2);
+    margin-right: 200px;
+    margin-top: 100px;
+    border-radius: 5%;
+    padding: 30px;
+}
+.bg-form img{
+    height: 80px;
+    margin: 30px 120px;
+}
+.bg-form p input{
+    height: 50px;
+}
+.bg-form button{
+    margin-top: 30px;
+}
+.main .col-md-3{
+    background: #00abeb;
+    padding: 0px;
+}
+.main .guanli{
+    width: 100px;
+    margin: 50px auto;
+    line-height: 30px;
+}
+.main .guanli p{
+    margin-top: 10px;
+    color: #fff;
+    font-size: 26px;
+}
+.guanli p span{
+    font-size: 16px;
+    color:blue;
+}
+.guanli p a{
+    color: #fff;
+    border:1px solid blue;
+    width: 70px;
+    border-radius: 10px;
+}
+.caozuo {
+    margin-top: 30px;
+    color:#fff;
+    font-size: 16px;
+    line-height: 40px;
+}
+.caozuo li{
+    padding-left: 50px;
+}
+.change{
+    background: #0CF9DF;
+}
+.logo-footer{
+    margin-top: 140px;
+    padding-left: 90px;
+}
+.main-top {
+    color: #00abeb;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 30px;
+    overflow: hidden;
+    line-height: 85px;
+    margin-bottom: 50px;
+}
+#bianhao{
+    width: 350px;
+}
+.search-peijian{
+    background: #ececec;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden;
+}
+.table-bordered th{
+    color:#fff;
+    background: #00abeb;
+}
+.table-bordered td{
+    line-height: 30px!important;
+}
+.button-gr button{
+    margin-left: 10px;
+}

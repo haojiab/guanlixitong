@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <form action="#" class="search-peijian">
+        <label for="bianhao">编号:</label>
+        <input type="text" placeholder="请输入产品编号" id="bianhao" class="form-control"><br>
+        <button class="btn btn-info"><span class="glyphicon glyphicon-search"></span> 搜索 </button>
+    </form>
+    <table class="table table-bordered text-center">
+        <tr>
+            <th class="text-center">序号</th>
+            <th class="text-center">配件编号</th>
+            <th class="text-center">配件名称</th>
+            <th class="text-center">车型</th>
+            <th class="text-center">库存</th>
+            <th class="text-center">单价</th>
+            <th class="text-center">选择</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>12345-45612</td>
+            <td>气缸壳</td>
+            <td>Grs123</td>
+            <td>20</td>
+            <td>个</td>
+            <td>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">
+                    下单
+                </button>
+
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">下单</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#" class="text-left">
+                                    <div>
+                                        <lable for="number">数量</lable>
+                                        <input type="text" class="form-control" id="number" placeholder="数量">
+                                    </div>
+                                    <div>
+                                        <lable for="yijia">议价</lable>
+                                        <input type="text" class="form-control" id="yijia" placeholder="议价">
+                                    </div>
+                                    <div>
+                                        <lable for="beizhu">备注</lable>
+                                        <textarea  class="form-control" id="beizhu" placeholder="备注不得超过50个字"></textarea>
+                                    </div>
+                                    <br>
+                                    <button class="btn btn-info">提交</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

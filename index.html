@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+        $(function () {
+            $(".list-unstyled li").click(function () {
+                $(this).addClass("change");
+                $(this).siblings().removeClass("change");
+                console.log($(this).index());
+                switch ($(this).index()) {
+                    case 0 :
+                        $("iframe").attr("src","配件查询.html");
+                        break;
+                    case 1 :
+                        $("iframe").attr("src","ximing.html");
+                        break;
+                    case 2 :
+                        $("iframe").attr("src","weishoul.html");
+                        break;
+                }
+
+            })
+        })
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-md-3">
+            <div class="guanli text-center">
+                <img class="img-circle" src="images/tx.png" alt="">
+                <p>admin <br>
+                    <span>(系统管理员)</span>
+                </p>
+                <p><a href="login.html" class="btn">注销</a></p>
+            </div>
+            <div class="caozuo">
+                <ul class="list-unstyled">
+                    <li>配件查询</li>
+                    <li>订单细明</li>
+                    <li>未受理订单</li>
+                </ul>
+            </div>
+            <div class="logo-footer">
+                <img src="images/logo-footer.png" alt="">
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="main-top">
+                <h1 class="pull-left">欢迎登陆</h1>
+                <div class="pull-right">
+                    <span class="glyphicon glyphicon-refresh"></span>
+                    <span class="glyphicon glyphicon-cog"></span>
+                    <span class="glyphicon glyphicon-envelope"></span>
+                </div>
+            </div>
+
+            <iframe width="100%" height="600" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>
